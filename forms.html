@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+    <style>
+        body{font-family:Arial, Helvetica, sans-serif; background-image:url(https://images.bhaskarassets.com/web2images/521/2022/07/01/lpu-730x5481_1656656176.jpg); background-size:cover; background-position:center; background-repeat:no-repeat; height:100vh; display:flex; justify-content:center; align-items:center;}
+        label{display:block; margin-bottom:10px;}
+        div{background-color:rgba(255, 255, 255, 0.77); border-radius:10px; padding:50px; width:400px;}
+        input[type="text"], input[type="email"], input[type="password"], select, textarea{width:100%; padding:10px; border:none; border-radius:5px;}
+        input[type="submit"], input[type="reset"]{background-color:rgba(225, 83, 18, 0.746); color:white; padding:10px 20px; border-radius:20px; border:none; transition:0.5s;}
+        input:focus, textarea:focus, select:focus{background-color:antiquewhite;}
+        input[type="submit"]:hover, input[type="reset"]:hover{background-color:rgba(218, 82, 9 ,0.837); transform:scale(1.05); cursor:pointer;}
+        h2{text-align:center;}
+    </style>
+</head>
+<body>
+    <div>
+        <form action="abc.php" method="POST">
+            <h2> Don't have an account?! Want to join us? </h2>
+            <label for="name"> Name: </label>
+            <input type="text" placeholder="Full name" id="name" name="name"> <br> <br>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email"> <br> <br>
+            <label for="cities"> Select City: </label>
+            <select name="cities" id="cities">
+                <option value="Select"> Select </option>
+                <option value="Noida"> Noida </option>
+                <option value="Delhi"> Delhi </option>
+                <option value="Mumbai"> Mumbai </option>
+                <option value="Bangalore"> Bangalore </option>
+            </select> <br> <br>
+            <label for="address"> Address: </label>
+            <textarea name="" id="address" cols="30" rows="5" name="address"> </textarea> <br> <br> 
+            <label for="gender"> Gender: </label>
+            <input type="radio" value="male" name="gender"> Male
+            <input type="radio" value="female" name="gender"> Female
+            <input type="radio" value="other" name="gender"> Other
+            <br> <br>
+            <label for="password"> Password </label>
+            <input type="password" name="password"> <br> <br>
+            <label for="upload"> Upload File: </label>
+            <input type="file" name="file"> <br> <br>
+            <input type="submit" value="Submit Form">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+</html>

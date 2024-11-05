@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- box-icon -->
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="stylesheet" href="about.html">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            padding: 10px 20px;
+            width: auto;
+            height: 75px;
+            align-items: center;
+            justify-content:space-between;
+            position:;
+            top: 0;
+            text-align: center;
+            right: 20px;
+            left: 0;
+        }
+        .navbar p{
+            color:brown;
+            font-size: 50px;
+            font-style: italic;
+        }
+        .navbar p:hover{
+            color:rosybrown;
+        }
+        .navlist{
+            display:flex;
+            list-style: none;
+            gap: 50px;
+            margin-right: 200px;
+        }
+        .navlist li{
+            list-style: none;
+        }
+        a{
+            margin-left: 100px;
+            text-decoration: none; 
+              
+        }
+        .navlist a{
+            color:maroon;
+            font-size: 30px;
+            letter-spacing: .08rem;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            font-weight: bolder;
+            text-decoration: underline;
+            
+        }
+        .navlist a:hover{
+            color:black;
+            cursor: pointer;
+        }
+        .navbar form button{
+            background:black;
+            color:aliceblue;
+            border: 1px;
+            size-adjust: 30px;
+        }
+        .navbar form button:hover{
+            cursor: pointer;
+        }
+        #menu-icon{
+            color: white;
+            font-size:2rem;}
+        #cart-icon{
+            color: aliceblue;
+            font-size:2rem;
+        }
+
+         .home{
+           background-color:none;
+           background-image:url("cofff.png"); 
+           background-repeat: no-repeat;
+           background-position: fixed;
+           background-size: 2000px;
+          background-size: cover;
+          /* margin-bottom: 50px; */
+     
+         }
+        #heading{
+            color:whitesmoke;
+            font-size: 60px;
+            margin-right:500px;
+            font-style:inherit;
+            top: 200px;
+            padding: 10px;
+            display: flex;
+
+            }
+            .form-control{
+                font-size: 1.5rem;
+                border: none;
+            } 
+            button{
+                font-size: 18px;
+                height: 40px;
+                width: 150px;
+                background-color: azure;
+                color: brown;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bolder;
+                border-radius: 10px;
+                text-align: center;
+            }
+            button:hover{
+                cursor: pointer;
+                color: black;
+                background-color: bisque;
+            }
+            .content {
+            /* display: flex; Use flexbox */
+            flex-direction: column; /* Stack items vertically */
+            padding-top: 250px;
+            color: whitesmoke;
+            font-weight: bolder;
+            font-size: 40px;
+            margin-left: 40px;
+            text-align:left;
+            /* background-color: blueviolet; */
+            }
+            .content h1{
+              font-family: 'Times New Roman', Times, serif;
+              color: burlywood;
+              text-decoration: underline;
+              text-decoration-color: brown;
+              font-style: italic;
+              
+            }
+            .content p{
+                font-family: 'Times New Roman', Times, serif;
+            }
+  
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p>Coffee</p>
+        </div>
+        <!-- menu-icon -->
+            <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul> 
+           <!-- <i class='bx bx-menu' id="menu-icon" ></i>
+           <i class='bx bxs-cart' id="cart-icon" ></i>  -->
+        </div> 
+         <!-- home section -->
+        <section class="home" id="home">
+        <div class="content" >
+        <h1>Coffee Time</h1>
+        <p>Start Your day with a  Cup of Coffee.
+         <p>Coffee is a popular and beloved </p>
+        <p>beverage enjoyed by people around the world.</p>
+        <button>SEARCH</button>
+        <button>MENU</button>
+        <button>ORDER NOW</button>
+        </div>
+    </section>
+    <br>
+        <!-- about section  -->
+         <section class="about" id="about">
+            <div class="about-img">
+                <!-- <img src="about coffee.jpeg" alt="">  -->
+            </div>
+            <div class="about-text">
+                <h2>ABOUT US</h2>
+                <p>hsdwhabdishiuwehiuhkjqkdjxbjcnskjazncxz ncb nbcbjcbj</p>
+                <a href="#" class="btn">Learn more</a>
+            </div> 
+            
+        
+
+        </section>
+</body> 
+</html>

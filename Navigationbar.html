@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation bar</title>
+        <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                 padding: 0;
+                width: 200px;
+                background-color: aqua;
+
+            }
+            li a{
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none ;
+            }
+            li a:hover{
+                background-color: pink;
+                color: aliceblue;
+            }
+            li a.active{
+                background-color: blueviolet;
+                color: lightyellow;
+            }
+            li a:hover:not(.active){
+                background-color: black;
+                color: azure;
+            }
+            li{
+                text-align: center;
+                border-bottom: 1px solid chocolate;
+            }
+            li:last-child{
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>vertical navigation bar</h2>
+        <ul>
+            <li><a herf="#home" Home></a></li>
+            <li><a herf="#news" News></a></li>
+            <li><a herf="#contact" Contact></a></li>
+            <li><a herf="#about" About></a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!-- <html lang="en">
+<head>
+</head>
+<body>
+    <form onsubmit="return confirmsubmission()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" required>
+        <button type="submit">Submit</button>
+        <script>
+            function confirmsubmission(){
+                return confirm("Are you sure you want to submit form ? ")
+            }
+        </script>
+    </form>
+</body>
+</html> -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirm Form Submission</title>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<button type="submit">Submit</button>
+<script>
+function validateForm() {
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const namePattern = /^[A-Za-z\s]{3,}$/; // Name must be at least 3 letters long and contain only letters and spaces
+
+if (!namePattern.test(name)) {
+alert("Name must be at least 3 characters long and contain only letters and spaces.");
+return false;
+}
+
+if (!email.includes("@")) { // Basic check to ensure email contains an '@'
+alert("Please enter a valid email address.");
+return false;
+}
+
+// If all validations pass, confirm submission
+return confirm("Are you sure you want to submit the form?");
+}
+</script>
+
+
+</body>
+</html> 
